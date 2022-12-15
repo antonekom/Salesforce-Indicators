@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Text to appear above the Indicators --></help>
+        <label><!-- Card Text --></label>
+        <name>Card_Text__c</name>
+    </CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- The hover text of the Indicator when false or blank. --></help>
+        <label><!-- Inverse Hover Text --></label>
+        <name>Inverse_Hover_Text__c</name>
+    </CustomFieldTranslation>

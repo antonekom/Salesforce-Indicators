@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- (Optional) The Lightning Design System icon from https://lightningdesignsystem.com/icons/ when being used instead of Field, Text, or Image URL for false or blank values. --></help>
+        <label><!-- Inverse Icon Value --></label>
+        <name>Inverse_Icon_Value__c</name>
+    </CustomFieldTranslation>

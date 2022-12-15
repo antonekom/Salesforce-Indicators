@@ -6,6 +6,8 @@ public with sharing class IndicatorController {
         @AuraEnabled
         public String CardIcon {get; set;}
         @AuraEnabled
+        public String CardIconClass {get; set;}
+        @AuraEnabled
         public String CardText {get; set;}
         @AuraEnabled
         public String CardTitle {get; set;}
@@ -19,6 +21,8 @@ public with sharing class IndicatorController {
         @AuraEnabled
         public String IconName {get; set;}
         @AuraEnabled
+        public String IconClass {get; set;}
+        @AuraEnabled
         public String TextValue {get; set;}
         @AuraEnabled
         public String ImageUrl {get; set;}
@@ -28,6 +32,8 @@ public with sharing class IndicatorController {
         public Boolean DisplayFalse {get; set;}
         @AuraEnabled
         public String FalseIcon {get; set;}
+        @AuraEnabled
+        public String FalseIconClass {get; set;}
         @AuraEnabled
         public String FalseTextValue {get; set;}
         @AuraEnabled
@@ -55,6 +61,8 @@ public with sharing class IndicatorController {
         public String ExtensionHoverText {get; set;}
         @AuraEnabled
         public String ExtensionIconValue {get; set;}
+        @AuraEnabled
+        public String ExtensionIconClass {get; set;}
         @AuraEnabled
         public String ExtensionImageUrl {get; set;}
         @AuraEnabled
@@ -91,6 +99,7 @@ public with sharing class IndicatorController {
 
             wrapper.IsActive = bundle.Active__c;
             wrapper.CardIcon = bundle.Card_Icon__c;
+            wrapper.CardIconClass = bundle.Card_Icon_Class__c;
             wrapper.CardText = bundle.Card_Text__c;
             wrapper.CardTitle = bundle.Card_Title__c;
             wrapper.Items = new List<IndicatorItem>();
@@ -112,6 +121,7 @@ public with sharing class IndicatorController {
                         }
             
                         item.IconName = indicatorItem.Icon_Value__c;
+                        item.IconClass = indicatorItem.Icon_Class__c;
                         item.TextValue = indicatorItem.Static_Text__c;
                         item.EmptyStaticBehavior = indicatorItem.Empty_Static_Text_Behavior__c;
                         item.ZeroBehavior = indicatorItem.Zero_Behavior__c;
@@ -119,6 +129,7 @@ public with sharing class IndicatorController {
                         item.HoverValue = indicatorItem.Hover_Text__c;
                         item.DisplayFalse  = indicatorItem.Show_False_or_Blank__c;
                         item.FalseIcon = indicatorItem.Inverse_Icon_Value__c;
+                        item.FalseIconClass = indicatorItem.Inverse_Icon_Class__c;
                         item.FalseTextValue = indicatorItem.Inverse_Static_Text__c;
                         item.FalseHoverValue = indicatorItem.Inverse_Hover_Text__c;
                         item.FalseImageUrl = indicatorItem.Inverse_Image__c;
@@ -136,6 +147,7 @@ public with sharing class IndicatorController {
                                 extension.Minimum = itemExtension.Minimum__c;
                                 extension.ExtensionHoverText = itemExtension.Hover_Text__c;
                                 extension.ExtensionIconValue = itemExtension.Icon_Value__c;
+                                extension.ExtensionIconClass = itemExtension.Icon_Class__c;
                                 extension.ExtensionImageUrl = itemExtension.Image__c;
                                 extension.ExtensionTextValue = itemExtension.Static_Text__c;
                                 extension.PriorityOrder = itemExtension.Priority__c;

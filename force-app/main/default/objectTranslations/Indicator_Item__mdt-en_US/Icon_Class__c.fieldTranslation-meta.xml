@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- (Optional) The Font Awesome icon class from https://lightningdesignsystem.com/icons/  when being used instead of Field, Text, or Image URL. --></help>
+        <label><!-- Icon Class --></label>
+        <name>Icon_Class__c</name>
+    </CustomFieldTranslation>

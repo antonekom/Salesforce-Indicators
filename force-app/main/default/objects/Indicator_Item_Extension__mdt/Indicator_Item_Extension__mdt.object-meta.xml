@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <description>Advanced values to extend an Indicator Item.</description>
     <label>Indicator Item Extension</label>

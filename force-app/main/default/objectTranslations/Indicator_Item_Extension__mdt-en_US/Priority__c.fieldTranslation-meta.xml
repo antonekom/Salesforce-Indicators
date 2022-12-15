@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <help><!-- Priority of this rule.  If an field&apos;s value first multiple extension rules, the lowest priority will be used. --></help>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+    </CustomFieldTranslation>

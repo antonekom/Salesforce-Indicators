@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+        <label><!-- Empty Static Text Behavior --></label>
+        <name>Empty_Static_Text_Behavior__c</name>
+        <picklistValues>
+            <masterLabel>Use Field Value</masterLabel>
+            <translation><!-- Use Field Value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Use Icon Only</masterLabel>
+            <translation><!-- Use Icon Only --></translation>
+        </picklistValues>
+    </CustomFieldTranslation>

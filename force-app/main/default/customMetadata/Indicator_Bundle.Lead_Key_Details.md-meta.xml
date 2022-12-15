@@ -7,6 +7,10 @@
         <value xsi:type="xsd:boolean">true</value>
     </values>
     <values>
+        <field>Card_Icon_Class__c</field>
+        <value xsi:nil="true"/>
+    </values>
+    <values>
         <field>Card_Icon__c</field>
         <value xsi:type="xsd:string">standard:lead_insights</value>
     </values>
@@ -17,6 +21,10 @@
     <values>
         <field>Card_Title__c</field>
         <value xsi:type="xsd:string">Lead Key Details</value>
+    </values>
+    <values>
+        <field>Description__c</field>
+        <value xsi:nil="true"/>
     </values>
     <values>
         <field>sObject__c</field>
