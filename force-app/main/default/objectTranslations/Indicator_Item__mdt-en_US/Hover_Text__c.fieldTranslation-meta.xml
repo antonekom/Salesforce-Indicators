@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- The hover text of the Indicator. --></help>
-        <label><!-- Hover Text --></label>
-        <name>Hover_Text__c</name>
-    </CustomFieldTranslation>

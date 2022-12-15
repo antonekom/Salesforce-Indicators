@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- (Optional) The Static Text used for false or blank when being used instead of Field, Icon, or Image URL. NOTE: Displays first 3 characters / emojis --></help>
-        <label><!-- Inverse Static Text --></label>
-        <name>Inverse_Static_Text__c</name>
-    </CustomFieldTranslation>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- To traverse utilize a field from a record higher in the parent-child relationship, directly enter the spanning fields (up to 5 level away).
-
-Example:  Contact.Account.Owner.FirstName --></help>
-        <label><!-- Advanced Field --></label>
-        <name>Advanced_Field__c</name>
-    </CustomFieldTranslation>

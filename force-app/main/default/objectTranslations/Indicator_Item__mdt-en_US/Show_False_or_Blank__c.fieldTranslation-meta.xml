@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
-        <help><!-- Should this indicator display anything when the field is false or blank? --></help>
-        <label><!-- Show when False or Blank --></label>
-        <name>Show_False_or_Blank__c</name>
-    </CustomFieldTranslation>
