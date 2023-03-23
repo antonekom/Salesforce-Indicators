@@ -32,7 +32,7 @@
     </values>
     <values>
         <field>Icon_Value__c</field>
-        <value xsi:type="xsd:string">standard:approval</value>
+        <value xsi:nil="true"/>
     </values>
     <values>
         <field>Image__c</field>
@@ -40,7 +40,7 @@
     </values>
     <values>
         <field>Inverse_Hover_Text__c</field>
-        <value xsi:type="xsd:string">No mobile</value>
+        <value xsi:type="xsd:string">No Mobile Phone entered</value>
     </values>
     <values>
         <field>Inverse_Icon_Class__c</field>
@@ -48,7 +48,7 @@
     </values>
     <values>
         <field>Inverse_Icon_Value__c</field>
-        <value xsi:type="xsd:string">standard:incident</value>
+        <value xsi:type="xsd:string">standard:generic_loading</value>
     </values>
     <values>
         <field>Inverse_Image__c</field>
@@ -64,7 +64,7 @@
     </values>
     <values>
         <field>Static_Text__c</field>
-        <value xsi:type="xsd:string">📱</value>
+        <value xsi:nil="true"/>
     </values>
     <values>
         <field>Zero_Behavior__c</field>

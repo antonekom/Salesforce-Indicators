@@ -24,7 +24,7 @@
     </values>
     <values>
         <field>Icon_Value__c</field>
-        <value xsi:type="xsd:string">standard:address</value>
+        <value xsi:type="xsd:string">standard:swarm_session</value>
     </values>
     <values>
         <field>Image__c</field>
@@ -44,7 +44,7 @@
     </values>
     <values>
         <field>Priority__c</field>
-        <value xsi:type="xsd:double">2.0</value>
+        <value xsi:type="xsd:double">20.0</value>
     </values>
     <values>
         <field>Static_Text__c</field>
