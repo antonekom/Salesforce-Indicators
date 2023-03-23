@@ -40,7 +40,11 @@
     </values>
     <values>
         <field>Inverse_Hover_Text__c</field>
-        <value xsi:type="xsd:string">Missing a rating!</value>
+        <value xsi:type="xsd:string">There is no Rating entered</value>
+    </values>
+    <values>
+        <field>Inverse_Icon_Value__c</field>
+        <value xsi:nil="true"/>
     </values>
     <values>
         <field>Inverse_Icon_Class__c</field>

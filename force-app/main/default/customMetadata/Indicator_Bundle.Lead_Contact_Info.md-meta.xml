@@ -12,15 +12,15 @@
     </values>
     <values>
         <field>Card_Icon__c</field>
-        <value xsi:nil="true"/>
+        <value xsi:type="xsd:string">standard:lead</value>
     </values>
     <values>
         <field>Card_Text__c</field>
-        <value xsi:nil="true"/>
+        <value xsi:type="xsd:string">Please enter key contact details for this Lead</value>
     </values>
     <values>
         <field>Card_Title__c</field>
-        <value xsi:nil="true"/>
+        <value xsi:type="xsd:string">Contact Details</value>
     </values>
     <values>
         <field>Description__c</field>
