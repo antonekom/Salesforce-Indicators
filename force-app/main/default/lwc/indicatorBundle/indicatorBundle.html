@@ -1,7 +1,17 @@
 <template>
     <template if:true={bundleActive}>
         <template if:false={errorOccurred}>
-            <lightning-card variant="narrow" icon-name={card.icon} title={card.title}>
+            <!-- <lightning-card variant="narrow" icon-name={card.icon} title={card.title}> -->
+                <lightning-card>
+                    <h3 slot="title">
+                        <template if:true={useFontAwesome}>
+                            <i class={card.icon}></i>
+                        </template>
+                        <template if:false={useFontAwesome}>
+                            <lightning-icon icon-name={card.icon}></lightning-icon>
+                        </template>
+                        <span class="slds-var-p-left_small">{card.title}</span>   
+                    </h3>
                 <template if:true={showRefresh}>
                     <lightning-button-icon 
                         variant="bare"

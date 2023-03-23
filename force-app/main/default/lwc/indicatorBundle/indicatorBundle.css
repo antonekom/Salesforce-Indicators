@@ -1,0 +1,7 @@
+i {
+    padding-right: 5px;
+    width: var(--lwc-squareIconMediumBoundary,2rem);
+    height: var(--lwc-squareIconMediumBoundary,2rem);
+    fill: var(--slds-c-icon-color-foreground, var(--sds-c-icon-color-foreground, var(--lwc-colorTextIconInverse,rgb(255, 255, 255))));
+    overflow:visible;
+}

@@ -13,6 +13,7 @@ export default class IndicatorBundle extends LightningElement {
     @api indsSize = 'large';
     @api indsShape = 'base';
     @api showRefresh = false;
+    @api useFontAwesome = false; // used to show fontawesome icon vs. lightning icon
     bundleActive = true;    // Set default active status
     hasHeader = false;      // Hide header by default
 
@@ -39,6 +40,7 @@ export default class IndicatorBundle extends LightningElement {
         const { data, error } = result;
         if(data) {
             if(Object.keys(data).length) {  // Used to confirm that values were returned, rather than an empty object
+                console.log('bundle details:');
                 console.dir(data);   // Retain for debug purposes
 
                 this.bundle = data;
@@ -55,12 +57,14 @@ export default class IndicatorBundle extends LightningElement {
                     }
                 } else {
                     // Assign the values to the card
+                    this.useFontAwesome = this.bundle.CardIconClass ? true : false;
                     this.card = {
                         title : this.bundle.CardTitle,
-                        icon: this.bundle.CardIcon,
+                        // icon: this.bundle.CardIcon,
+                        icon: this.useFontAwesome ? this.bundle.CardIconClass + ' fa-fw' : this.bundle.CardIcon,
                         body: this.bundle.CardText
                     }
-
+                   
                     if(this.bundle.CardTitle || this.bundle.CardIcon){
                         this.hasHeader = true;
                     }
@@ -139,7 +143,7 @@ export default class IndicatorBundle extends LightningElement {
                     // console.log('DataValue',dataValue);   // Retain for debug purposes
                     
                     let showDefault = false;
-                    if( item.HoverValue || item.TextValue || item.IconName || item.ImageUrl ){
+                    if( item.HoverValue || item.TextValue || item.IconName || item.IconClass ||item.ImageUrl ){
                         showDefault = true;
                     }
 
@@ -185,7 +189,7 @@ export default class IndicatorBundle extends LightningElement {
                                 if(match) {
                                     // If there is a match for an Extension, assign the extension's override values
                                     matchedExtension = {
-                                        "IconName" : extension.ExtensionIconValue,
+                                        "IconName" : extension.ExtensionIconClass ? extension.ExtensionIconClass : extension.ExtensionIconValue,
                                         "TextValue" : extension.ExtensionTextValue,
                                         "ImageUrl" : extension.ExtensionImageUrl,
                                         "HoverValue" : extension.ExtensionHoverText,

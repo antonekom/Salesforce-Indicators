@@ -1,6 +1,15 @@
 <template>
     <template if:false={record}>
-        <lightning-avatar 
+        <template if:true={useFontAwesome}>
+            <span class="slds-avatar">
+                <span class="slds-icon_container slds-icon-standard-account" title="Description of icon when needed">
+                    <i class={indIcon} aria-hidden="true"></i>
+                  <span class="slds-assistive-text">{indHoverText}</span>
+                </span>
+              </span>
+        </template>
+        <template if:false={useFontAwesome}>
+            <lightning-avatar 
             size={indSize}
             variant={indShape}
             initials={indText}
@@ -9,5 +18,6 @@
             alternative-text={indHoverText} 
             class={indClass}>
         </lightning-avatar>
+        </template>
     </template>
 </template>
